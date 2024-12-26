@@ -1,0 +1,195 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation styles */
+.nav {
+    background-color: rgb(78, 78, 253);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.nav h1 {
+    margin: 0;
+    color: white;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.nav .nav-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 0;
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.nav a i {
+    margin-right: 5px;
+}
+
+.nav a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    transform: translateY(-5px); /* Move upward on hover */
+}
+
+.active {
+    font-weight: bold;
+}
+header {
+    margin-top: 10%;
+    text-align: center;
+    padding: 5px 0;
+}
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.get-started-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.get-started-login a {
+    background-color: rgb(78, 78, 253);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.get-started-login a:hover {
+    background-color: rgb(58, 58, 233);
+    transform: translateY(-5px); /* Move upward on hover */
+    transition: 0.5s;
+}
+/* Fixed footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Login form styles */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Registration form styles */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(78, 78, 253);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(60, 60, 200);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center; /* Center content on smaller screens */
+    }
+
+    .nav .nav-links {
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .nav a {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
